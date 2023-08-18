@@ -50,7 +50,7 @@ installing_cmake() {
 
 echo "Select with NDK version you need install?"
 
-select item in r17c r18b r19c r20b r21e r22b r23b r24 Quit; do
+select item in r17c r18b r19c r20b r21e r22b r23b r24 r25 Quit; do
 	case $item in
 	"r17c")
 		ndk_ver="17.2.4988734"
@@ -90,6 +90,12 @@ select item in r17c r18b r19c r20b r21e r22b r23b r24 Quit; do
 	"r24")
 		ndk_ver="24.0.8215888"
 		ndk_ver_name="r24"
+		break
+		;;
+         
+	 "r25")
+		ndk_ver="25.2.9519653"
+		ndk_ver_name="r25"
 		break
 		;;
 
